@@ -1,0 +1,5 @@
+Royal Buddies V7.4.1 - Bombardeur V2
+
+Correction : les pivots du canon, des roues et du boulet ont maintenant leur pose neutre directement dans le GLB.
+Ainsi Idle et Move ne remettent plus les pieces a l'origine. Attack et Death conservent leurs animations.
+Orientation : conservee ; le modele pointe +Z local et le gameplay oriente deja la racine vers la cible.

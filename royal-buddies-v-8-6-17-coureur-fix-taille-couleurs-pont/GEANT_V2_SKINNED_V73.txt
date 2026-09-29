@@ -1,0 +1,4 @@
+GEANT V2 SKINNED - V7.3
+Le geant.glb est la version skinnee: 1 skin, 12 joints, animations Idle/Walk/Attack/Death.
+PREVIEW_Ground est masque en jeu.
+Echelle conservee: 0.52.

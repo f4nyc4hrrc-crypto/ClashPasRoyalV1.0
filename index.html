@@ -46,7 +46,7 @@ function unlockMusic(){if(musicUnlocked)return;musicUnlocked=true;safePlay(menuM
 safePlay(menuMusic);
 ['touchstart','pointerdown','click','keydown'].forEach(e=>window.addEventListener(e,unlockMusic,{once:true,passive:true}));
 
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":24948348,"index.wasm":37902138},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":26796788,"index.wasm":37902138},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const engine = new Engine(GODOT_CONFIG);
 const fill=document.getElementById('rb-fill'),pct=document.getElementById('rb-pct'),loader=document.getElementById('rb-loader');
 const track=document.getElementById('rb-track'),status=document.getElementById('rb-status'),startPrompt=document.getElementById('rb-start');

@@ -1,0 +1,56 @@
+﻿ROYAL BUDDIES — V8.1 CARTES / GOBELIN VIKING / TACTILE / RIVIÈRE
+
+Ouvrir le projet avec Unity 6000.6.3f1, puis Assets/RoyalBuddies/Scenes/RB_Battle.unity.
+La refonte environnementale nordique est conservée et enregistrée dans la scène.
+Aucun générateur à exécuter pour appliquer ces changements.
+
+CORRECTIONS
+- Illustrations des cartes centrées, proportions conservées et remplissage du cadre avec masque.
+- Ancien gobelin procédural remplacé par le modèle du script RB_Gobelin_Viking_V2.py.
+- Animations Idle, Run, Death et trois attaques Attack_01 / Attack_02 / Attack_03.
+- Attaques tirées aléatoirement, sans répétition immédiate. Vitesse visuelle adaptée à la cadence existante.
+- Sélection puis toucher le terrain, ou glisser une carte et relâcher sur une zone autorisée.
+- Placement bloqué sur l'interface, pendant la pause ou après la fin du combat.
+- Annulation du glissement lorsque l'application perd le focus ou passe en arrière-plan.
+- Interface dans la zone sûre de l'écran (encoche, barre système).
+- Rivière centrale et eau extérieure : même shader et mêmes couleurs en coordonnées monde.
+- Statistiques du gobelin, zones de déploiement, tours, ponts et caméra conservés.
+
+MODÈLE
+Les données animées sont pré-calculées et partagées, avec skinning GPU et matériau commun.
+Le jeu n'a pas besoin de Blender ou d'un import glTF à l'exécution.
+ModelSource contient le script fourni, le fichier Blender et le GLB éditable.
+
+VÉRIFICATIONS EFFECTUÉES
+Compilation externe de tous les scripts runtime et éditeur avec les assemblies Unity installées
+et les packages du projet : aucune erreur ; avertissements préexistants sur des API anciennes.
+Contrôle du squelette et des poses contre les déformations Blender, pour chaque animation :
+écart maximal inférieur à 0,000001 m sur les frames contrôlées.
+Indices, poids, normales, références du gobelin/eau et GUID contrôlés.
+Règles de placement et statistiques de combat comparées aux fichiers d'origine : inchangées.
+
+LIMITES
+Ces contrôles ne constituent pas un build Unity ni un test Play Mode.
+Le lancement Unity est bloqué dans cette session par l'accès du client de licence à ses dossiers.
+Aucun test sur un véritable iPhone, iPad ou appareil Android n'a donc été effectué.
+Le tactile et les zones sûres sont implémentés ; leur rendu, la caméra sur tablette,
+les performances et les builds iOS/Android doivent être validés dans Unity et sur appareil.
+Aucune capture générée extérieurement n'est présentée comme une capture du jeu.
+
+SAUVEGARDE
+SceneBackup/RB_Battle_before_overhaul.unity contient la scène initiale.
+Le ZIP d'origine et le script de gobelin fournis n'ont pas été modifiés.
+Les anciennes passes automatiques de décor au démarrage restent désactivées.
+Le ZIP contient directement Assets, Packages et ProjectSettings à sa racine.
+
+CORRECTIF V8.1
+Ordre des éléments UI préservé lors du transfert vers la zone sûre. Les voiles de pause
+et de fin restent derrière les boutons : reprendre, abandonner, rejouer et retour menu.
+Compilation externe runtime sans erreur ; tests de transfert de hiérarchie réussis.
+Ce correctif n’a pas été exécuté dans Unity dans cette session.
+
+CORRECTIF V8.1
+Ordre des éléments UI préservé lors du transfert vers la zone sûre. Les voiles de pause
+et de fin restent derrière les boutons : reprendre, abandonner, rejouer et retour menu.
+Compilation externe runtime sans erreur ; tests de transfert de hiérarchie réussis.
+Ce correctif n’a pas été exécuté dans Unity dans cette session.

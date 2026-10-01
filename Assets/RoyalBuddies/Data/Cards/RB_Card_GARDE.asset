@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3dfeff9b3029545b153dff4307d732, type: 3}
+  m_Name: RB_Card_GARDE
+  m_EditorClassIdentifier: RoyalBuddies.Runtime::RoyalBuddies.CardData
+  id: GARDE
+  displayName: GARDE
+  cost: 3
+  kind: 0
+  troop: {fileID: 11400000, guid: 424719850a8957a449a1fa7f90102e7b, type: 2}
+  spell: 0
+  catalogIndex: 0
+  portraitRect:
+    serializedVersion: 2
+    x: 104
+    y: 812
+    width: 142
+    height: 121
+  portraitIsSeparateTexture: 0
+  accent: {r: 0.6627451, g: 0.5764706, b: 0.39607844, a: 1}

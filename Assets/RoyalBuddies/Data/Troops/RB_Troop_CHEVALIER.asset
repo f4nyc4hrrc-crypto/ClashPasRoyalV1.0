@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dc0ef48a90c5849b21bc33ecfc8af0, type: 3}
+  m_Name: RB_Troop_CHEVALIER
+  m_EditorClassIdentifier: RoyalBuddies.Runtime::RoyalBuddies.TroopData
+  id: CHEVALIER
+  displayName: CHEVALIER
+  hp: 1050
+  damage: 132
+  speed: 2.05
+  range: 1.25
+  attackInterval: 1.08
+  size: 0.6
+  attackKind: 0
+  splashRadius: 0
+  isAir: 0
+  buildingsOnly: 0
+  canHitAir: 0
+  jumpsRiver: 0
+  prefab: {fileID: 314144129092322542, guid: 1cb39a5b5d511c34daf76d8bcbf77bb1, type: 3}
+  rigKind: 0
+  spawnHeight: 0
+  hpBarHeight: 2.75
+  hpBarWidth: 1.48
+  armorColor: {r: 1, g: 1, b: 1, a: 1}
+  attackStates:
+  - Attack_01
+  - Attack_02
+  - Attack_03
+  - Attack_04
+  - Attack_05
+  attackWeights: []
+  noImmediateRepeat: 1
+  animBlend: 0.06
+  hasHitAnimation: 1
+  sprintDuration: 5
+  useAnimationEvents: 0
+  impactNormalizedTime: 0.45

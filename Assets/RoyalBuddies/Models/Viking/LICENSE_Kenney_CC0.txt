@@ -1,0 +1,3 @@
+Modèles 3D : Kenney (www.kenney.nl) — Survival Kit, Nature Kit, Pirate Kit, Castle Kit, Fantasy Town Kit.
+Licence : Creative Commons Zero (CC0) — usage libre, y compris commercial, sans attribution obligatoire.
+Modifications Royal Buddies : textures embarquées dans les .glb, matériaux non métalliques, recolorations (toits en chaume, voile rouge, pins, pierres).

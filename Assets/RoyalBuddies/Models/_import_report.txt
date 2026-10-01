@@ -1,0 +1,812 @@
+=== Assets/RoyalBuddies/Models/RB_Archere_V1.glb main=RB_Archere_V1
+  Animator: RB_Archere_V1 (root=True)
+  LegacyAnimation: False
+  Bounds size=(0.96, 1.75, 1.21) center=(0.01, 0.84, 0.18)
+  R RB_Archere_Projectile MeshRenderer COLOR_0(RGBA(13, 6, 3, 255)) mats=3 active=True
+  R RB_Archere_Rig/RB_Archere_Arc SkinnedMeshRenderer COLOR_0(RGBA(12, 5, 3, 255)) mats=4 active=True
+  R RB_Archere_Rig/RB_Archere_Corps SkinnedMeshRenderer COLOR_0(RGBA(3, 24, 8, 255)) mats=3 active=True
+  R RB_Archere_Rig/RB_Archere_Fleche SkinnedMeshRenderer COLOR_0(RGBA(13, 6, 3, 255)) mats=3 active=True
+  M MAT_RB_Archere_Tissu_Cuir_Cheveux shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  M MAT_RB_Archere_Metal shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  M MAT_RB_Archere_Emeraude shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.424, 1.000, 0.767, 1.000)
+  M MAT_RB_Archere_Rune_Bleue shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.537, 0.931, 1.000, 1.000)
+  M MAT_RB_Archere_Rune_Bleue_Boost shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.626, 0.955, 1.000, 1.000)
+  CLIP Attack_01 len=2,6 legacy=False loop=True fps=60 bindings=450
+  CLIP Attack_02 len=1,733 legacy=False loop=True fps=60 bindings=450
+  CLIP Attack_03 len=2,8 legacy=False loop=True fps=60 bindings=450
+  CLIP Death len=1,867 legacy=False loop=True fps=60 bindings=450
+  CLIP Hit len=0,533 legacy=False loop=True fps=60 bindings=450
+  CLIP Idle len=2,4 legacy=False loop=True fps=60 bindings=450
+  CLIP Run len=0,667 legacy=False loop=True fps=60 bindings=450
+  CLIP Walk len=1,067 legacy=False loop=True fps=60 bindings=450
+  N 
+  N RB_Archere_Projectile
+  N RB_Archere_Rig
+  N RB_Archere_Rig/RB_Archere_Arc
+  N RB_Archere_Rig/RB_Archere_Corps
+  N RB_Archere_Rig/RB_Archere_Fleche
+  N RB_Archere_Rig/Root
+  N RB_Archere_Rig/Root/Arrow
+  N RB_Archere_Rig/Root/Arrow/Glow_Arrow
+  N RB_Archere_Rig/Root/Pelvis
+  N RB_Archere_Rig/Root/Pelvis/Skirt_B
+  N RB_Archere_Rig/Root/Pelvis/Skirt_F
+  N RB_Archere_Rig/Root/Pelvis/Spine
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Cape_1
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Cape_1/Cape_2
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck/Head
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Braid_L_1
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Braid_L_1/Braid_L_2
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Braid_R_1
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Braid_R_1/Braid_R_2
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Hair_1
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Hair_1/Hair_2
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Hair_1/Hair_2/Hair_3
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Quiver
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow/Bow_L1
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow/Bow_L1/Bow_L2
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow/Bow_L1/Bow_L2/String_Bottom
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow/Bow_L1/Glow_Bow_L
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow/Bow_U1
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow/Bow_U1/Bow_U2
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow/Bow_U1/Bow_U2/String_Top
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L/Bow/Bow_U1/Glow_Bow_U
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.R
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R
+  N RB_Archere_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Fingers.R
+  N RB_Archere_Rig/Root/Pelvis/Thigh.L
+  N RB_Archere_Rig/Root/Pelvis/Thigh.L/Shin.L
+  N RB_Archere_Rig/Root/Pelvis/Thigh.L/Shin.L/Foot.L
+  N RB_Archere_Rig/Root/Pelvis/Thigh.R
+  N RB_Archere_Rig/Root/Pelvis/Thigh.R/Shin.R
+  N RB_Archere_Rig/Root/Pelvis/Thigh.R/Shin.R/Foot.R
+  N RB_Archere_Rig/Root/String_Mid
+=== Assets/RoyalBuddies/Models/RB_Bombardeur_V2.glb main=RB_Bombardeur_V2
+  Animator: RB_Bombardeur_V2 (root=True)
+  LegacyAnimation: False
+  Bounds size=(2.66, 3.87, 3.69) center=(0.00, 1.85, 0.62)
+  R RB_Bombardeur/RB_Ball_Pivot/RB_CannonBall MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Bolt MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Bolt.001 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Bolt.002 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Bolt.003 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Chassis MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/FrontBeam MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/MetalBrace MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/MetalBrace.001 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/BarrelBand MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/BarrelBand.001 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/BarrelBand.002 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/Breech MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/CannonTube MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/MuzzleDark MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/MuzzleRing MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/RB_Flash_Pivot/RB_MuzzleFlash MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Hub MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_IronTire MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.001 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.002 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.003 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.004 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.005 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.006 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.007 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_WoodRim MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Hub MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_IronTire MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.001 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.002 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.003 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.004 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.005 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.006 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.007 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_WoodRim MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/RearBeam MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/SideRail MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/SideRail.001 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Support MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Support.001 MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Trunnion MeshRenderer nocolor mats=1 active=True
+  R RB_Bombardeur/RB_Carriage_Pivot/Trunnion.001 MeshRenderer nocolor mats=1 active=True
+  M RB_Iron shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.221, 0.221, 0.243, 1.000)
+  M RB_Oak shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.680, 0.437, 0.221, 1.000)
+  M RB_Oak_Light shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.827, 0.575, 0.293, 1.000)
+  M RB_Brass shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.843, 0.601, 0.248, 1.000)
+  M RB_Steel_Edge shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.349, 0.396, 0.449, 1.000)
+  M RB_Dark_Steel shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.183, 0.235, 0.293, 1.000)
+  M RB_Muzzle_Fire shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.381, 0.100, 1.000)
+  CLIP Attack len=1,75 legacy=False loop=True fps=60 bindings=19
+  CLIP Death len=2,292 legacy=False loop=True fps=60 bindings=28
+  CLIP Idle len=2,5 legacy=False loop=True fps=60 bindings=7
+  CLIP Move len=1,25 legacy=False loop=True fps=60 bindings=11
+  N 
+  N RB_Bombardeur
+  N RB_Bombardeur/RB_Ball_Pivot
+  N RB_Bombardeur/RB_Ball_Pivot/RB_CannonBall
+  N RB_Bombardeur/RB_Carriage_Pivot
+  N RB_Bombardeur/RB_Carriage_Pivot/Bolt
+  N RB_Bombardeur/RB_Carriage_Pivot/Bolt.001
+  N RB_Bombardeur/RB_Carriage_Pivot/Bolt.002
+  N RB_Bombardeur/RB_Carriage_Pivot/Bolt.003
+  N RB_Bombardeur/RB_Carriage_Pivot/Chassis
+  N RB_Bombardeur/RB_Carriage_Pivot/FrontBeam
+  N RB_Bombardeur/RB_Carriage_Pivot/MetalBrace
+  N RB_Bombardeur/RB_Carriage_Pivot/MetalBrace.001
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/BarrelBand
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/BarrelBand.001
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/BarrelBand.002
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/Breech
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/CannonTube
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/MuzzleDark
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/MuzzleRing
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/RB_Flash_Pivot
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Barrel_Pivot/RB_Flash_Pivot/RB_MuzzleFlash
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Hub
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_IronTire
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.001
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.002
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.003
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.004
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.005
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.006
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_Spoke.007
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_L_Pivot/RB_Wheel_L_Pivot_WoodRim
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Hub
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_IronTire
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.001
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.002
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.003
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.004
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.005
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.006
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_Spoke.007
+  N RB_Bombardeur/RB_Carriage_Pivot/RB_Wheel_R_Pivot/RB_Wheel_R_Pivot_WoodRim
+  N RB_Bombardeur/RB_Carriage_Pivot/RearBeam
+  N RB_Bombardeur/RB_Carriage_Pivot/SideRail
+  N RB_Bombardeur/RB_Carriage_Pivot/SideRail.001
+  N RB_Bombardeur/RB_Carriage_Pivot/Support
+  N RB_Bombardeur/RB_Carriage_Pivot/Support.001
+  N RB_Bombardeur/RB_Carriage_Pivot/Trunnion
+  N RB_Bombardeur/RB_Carriage_Pivot/Trunnion.001
+=== Assets/RoyalBuddies/Models/RB_Chevalier_V1.glb main=RB_Chevalier_V1
+  Animator: RB_Chevalier_V1 (root=True)
+  LegacyAnimation: False
+  Bounds size=(1.99, 2.13, 1.66) center=(-0.01, 1.01, 0.40)
+  R RB_Chevalier_Rig/RB_Chevalier_Corps SkinnedMeshRenderer COLOR_0(RGBA(28, 18, 11, 255)) mats=2 active=True
+  R RB_Chevalier_Rig/RB_Chevalier_Epee SkinnedMeshRenderer COLOR_0(RGBA(16, 6, 2, 255)) mats=2 active=True
+  M MAT_RB_Chevalier_Tissu_Cuir_Fourrure shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  M MAT_RB_Chevalier_Metal shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  CLIP Attack_01 len=1,4 legacy=False loop=True fps=60 bindings=270
+  CLIP Attack_02 len=1,4 legacy=False loop=True fps=60 bindings=270
+  CLIP Attack_03 len=1,533 legacy=False loop=True fps=60 bindings=270
+  CLIP Attack_04 len=1,2 legacy=False loop=True fps=60 bindings=270
+  CLIP Attack_05 len=1,8 legacy=False loop=True fps=60 bindings=270
+  CLIP Death len=1,8 legacy=False loop=True fps=60 bindings=270
+  CLIP Hit len=0,533 legacy=False loop=True fps=60 bindings=270
+  CLIP Idle len=2 legacy=False loop=True fps=60 bindings=270
+  CLIP Run len=0,667 legacy=False loop=True fps=60 bindings=270
+  CLIP Walk len=1,067 legacy=False loop=True fps=60 bindings=270
+  N 
+  N RB_Chevalier_Rig
+  N RB_Chevalier_Rig/RB_Chevalier_Corps
+  N RB_Chevalier_Rig/RB_Chevalier_Epee
+  N RB_Chevalier_Rig/Root
+  N RB_Chevalier_Rig/Root/Hips
+  N RB_Chevalier_Rig/Root/Hips/Spine
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Cape_1
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Cape_1/Cape_2
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Cape_1/Cape_2/Cape_3
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Neck
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Neck/Head
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.L
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.L/UpperArm.L
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.R
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Sword
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Sword/Sword_Base
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Sword/Sword_Contact
+  N RB_Chevalier_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Sword/Sword_Contact/Sword_Tip
+  N RB_Chevalier_Rig/Root/Hips/Thigh.L
+  N RB_Chevalier_Rig/Root/Hips/Thigh.L/Shin.L
+  N RB_Chevalier_Rig/Root/Hips/Thigh.L/Shin.L/Foot.L
+  N RB_Chevalier_Rig/Root/Hips/Thigh.R
+  N RB_Chevalier_Rig/Root/Hips/Thigh.R/Shin.R
+  N RB_Chevalier_Rig/Root/Hips/Thigh.R/Shin.R/Foot.R
+=== Assets/RoyalBuddies/Models/RB_Coureur_V1.glb main=RB_Coureur_V1
+  Animator: RB_Coureur_V1 (root=True)
+  LegacyAnimation: False
+  Bounds size=(1.92, 2.79, 2.98) center=(0.03, 1.31, 0.27)
+  R RB_Coureur_Rig/RB_Coureur_Cavalier SkinnedMeshRenderer COLOR_0(RGBA(139, 60, 36, 255)) mats=2 active=True
+  R RB_Coureur_Rig/RB_Coureur_Hache SkinnedMeshRenderer COLOR_0(RGBA(21, 8, 3, 255)) mats=2 active=True
+  R RB_Coureur_Rig/RB_Coureur_Sanglier SkinnedMeshRenderer COLOR_0(RGBA(48, 28, 16, 255)) mats=2 active=True
+  M MAT_RB_Coureur_Organique shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  M MAT_RB_Coureur_Metal shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  CLIP Attack len=1,4 legacy=False loop=True fps=60 bindings=490
+  CLIP Death len=2 legacy=False loop=True fps=60 bindings=490
+  CLIP Jump len=1,4 legacy=False loop=True fps=60 bindings=490
+  CLIP Run len=0,8 legacy=False loop=True fps=60 bindings=490
+  N 
+  N RB_Coureur_Rig
+  N RB_Coureur_Rig/RB_Coureur_Cavalier
+  N RB_Coureur_Rig/RB_Coureur_Hache
+  N RB_Coureur_Rig/RB_Coureur_Sanglier
+  N RB_Coureur_Rig/Root
+  N RB_Coureur_Rig/Root/Boar_Pelvis
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_HL_Upper
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_HL_Upper/Boar_HL_Lower
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_HL_Upper/Boar_HL_Lower/Boar_HL_Hoof
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_HR_Upper
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_HR_Upper/Boar_HR_Lower
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_HR_Upper/Boar_HR_Lower/Boar_HR_Hoof
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_FL_Upper
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_FL_Upper/Boar_FL_Lower
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_FL_Upper/Boar_FL_Lower/Boar_FL_Hoof
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_FR_Upper
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_FR_Upper/Boar_FR_Lower
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_FR_Upper/Boar_FR_Lower/Boar_FR_Hoof
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_Neck
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_Neck/Boar_Head
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_Neck/Boar_Head/Boar_Ear.L
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Boar_Chest/Boar_Neck/Boar_Head/Boar_Ear.R
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Cape_1
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Cape_1/Rider_Cape_2
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Cape_1/Rider_Cape_2/Rider_Cape_3
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Neck
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Neck/Rider_Head
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Neck/Rider_Head/Rider_Beard_1
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Neck/Rider_Head/Rider_Beard_1/Rider_Beard_2
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Neck/Rider_Head/Rider_Hair_1
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Neck/Rider_Head/Rider_Hair_1/Rider_Hair_2
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.L
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.L/Rider_UpperArm.L
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.L/Rider_UpperArm.L/Rider_LowerArm.L
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.L/Rider_UpperArm.L/Rider_LowerArm.L/Rider_Hand.L
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.R
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.R/Rider_UpperArm.R
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.R/Rider_UpperArm.R/Rider_LowerArm.R
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.R/Rider_UpperArm.R/Rider_LowerArm.R/Rider_Hand.R
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Spine/Rider_Chest/Rider_Shoulder.R/Rider_UpperArm.R/Rider_LowerArm.R/Rider_Hand.R/Axe
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Thigh.L
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Thigh.L/Rider_Calf.L
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Thigh.L/Rider_Calf.L/Rider_Foot.L
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Thigh.R
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Thigh.R/Rider_Calf.R
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Spine/Rider_Pelvis/Rider_Thigh.R/Rider_Calf.R/Rider_Foot.R
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Tail_1
+  N RB_Coureur_Rig/Root/Boar_Pelvis/Boar_Tail_1/Boar_Tail_2
+=== Assets/RoyalBuddies/Models/RB_Fireball_ForgedMeteor.glb main=RB_Fireball_ForgedMeteor
+  Animator: RB_Fireball_ForgedMeteor (root=True)
+  LegacyAnimation: False
+  Bounds size=(3.28, 19.73, 10.16) center=(-0.02, 9.86, -5.08)
+  R RB_Fireball_FX/RB_FX_Carrier/RB_Fireball_ForgedMeteor MeshRenderer nocolor mats=5 active=True
+  R RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_CoreA MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_CoreB MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_MidA MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_MidB MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_OuterA MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_OuterB MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_00 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_01 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_02 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_03 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_04 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_05 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_06 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_07 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_08 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_09 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_10 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_11 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_12 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Debris_13 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_00 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_01 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_02 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_03 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_04 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_05 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_06 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_07 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_08 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Dust_09 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_00 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_01 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_02 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_03 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_04 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_05 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_06 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_07 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_08 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Fireball_09 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Impact_Flash MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Scorch MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Shockwave_A MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Shockwave_B MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Smoke_00 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Smoke_01 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Smoke_02 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Smoke_03 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Smoke_04 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Smoke_05 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_00 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_01 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_02 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_03 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_04 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_05 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_06 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_07 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_08 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_09 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_10 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_11 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_12 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_13 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_14 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_15 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_16 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_17 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_18 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_19 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_20 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_21 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_22 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_23 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_24 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_Spark_25 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TargetMarker MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_00 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_01 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_02 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_03 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_04 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_05 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_06 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_07 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_08 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_09 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_10 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_11 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_12 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_13 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_14 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailPuff_15 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_00 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_01 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_02 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_03 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_04 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_05 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_06 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_07 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_08 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_09 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_10 MeshRenderer nocolor mats=1 active=True
+  R RB_Fireball_FX/RB_FX_TrailSpark_11 MeshRenderer nocolor mats=1 active=True
+  M RB_Magma_Fissures shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.381, 0.070, 1.000)
+  M RB_Volcanic_Obsidian shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.183, 0.143, 0.123, 1.000)
+  M RB_Burnt_Forged_Iron shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.381, 0.283, 0.200, 1.000)
+  M RB_Worn_Metal_Edges shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.537, 0.403, 0.253, 1.000)
+  M RB_Incandescent_Rune shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.767, 0.206, 1.000)
+  M RB_FX_Flame_Core shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.955, 0.735, 1.000)
+  M RB_FX_Flame_Mid shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.701, 0.248, 1.000)
+  M RB_FX_Flame_Outer shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.931, 0.366, 0.112, 1.000)
+  M RB_FX_Debris_Hot shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.537, 0.152, 1.000)
+  M RB_FX_Dust shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.349, 0.304, 0.272, 1.000)
+  M RB_FX_Fireball_Yellow shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.881, 0.424, 1.000)
+  M RB_FX_Fireball_Orange shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.626, 0.190, 1.000)
+  M RB_FX_Fireball_Red shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.798, 0.272, 0.100, 1.000)
+  M RB_FX_Flash shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.978, 0.881, 1.000)
+  M RB_FX_Scorch shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.086, 0.070, 0.061, 1.000)
+  M RB_FX_Shockwave shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.809, 0.461, 1.000)
+  M RB_FX_Shockwave_Hot shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.931, 0.665, 1.000)
+  M RB_FX_Smoke_Dark shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.235, 0.221, 0.221, 1.000)
+  M RB_FX_Ember shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.735, 0.248, 1.000)
+  M RB_FX_Target_Marker shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 0.461, 0.248, 1.000)
+  M RB_FX_Smoke_Embers shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.437, 0.248, 0.172, 1.000)
+  N 
+  N RB_Fireball_FX
+  N RB_Fireball_FX/RB_FX_Carrier
+  N RB_Fireball_FX/RB_FX_Carrier/RB_Fireball_ForgedMeteor
+  N RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis
+  N RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_CoreA
+  N RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_CoreB
+  N RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_MidA
+  N RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_MidB
+  N RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_OuterA
+  N RB_Fireball_FX/RB_FX_Carrier/RB_FX_TrailAxis/RB_FX_Flame_OuterB
+  N RB_Fireball_FX/RB_FX_Debris_00
+  N RB_Fireball_FX/RB_FX_Debris_01
+  N RB_Fireball_FX/RB_FX_Debris_02
+  N RB_Fireball_FX/RB_FX_Debris_03
+  N RB_Fireball_FX/RB_FX_Debris_04
+  N RB_Fireball_FX/RB_FX_Debris_05
+  N RB_Fireball_FX/RB_FX_Debris_06
+  N RB_Fireball_FX/RB_FX_Debris_07
+  N RB_Fireball_FX/RB_FX_Debris_08
+  N RB_Fireball_FX/RB_FX_Debris_09
+  N RB_Fireball_FX/RB_FX_Debris_10
+  N RB_Fireball_FX/RB_FX_Debris_11
+  N RB_Fireball_FX/RB_FX_Debris_12
+  N RB_Fireball_FX/RB_FX_Debris_13
+  N RB_Fireball_FX/RB_FX_Dust_00
+  N RB_Fireball_FX/RB_FX_Dust_01
+  N RB_Fireball_FX/RB_FX_Dust_02
+  N RB_Fireball_FX/RB_FX_Dust_03
+  N RB_Fireball_FX/RB_FX_Dust_04
+  N RB_Fireball_FX/RB_FX_Dust_05
+  N RB_Fireball_FX/RB_FX_Dust_06
+  N RB_Fireball_FX/RB_FX_Dust_07
+  N RB_Fireball_FX/RB_FX_Dust_08
+  N RB_Fireball_FX/RB_FX_Dust_09
+  N RB_Fireball_FX/RB_FX_Fireball_00
+  N RB_Fireball_FX/RB_FX_Fireball_01
+  N RB_Fireball_FX/RB_FX_Fireball_02
+  N RB_Fireball_FX/RB_FX_Fireball_03
+  N RB_Fireball_FX/RB_FX_Fireball_04
+  N RB_Fireball_FX/RB_FX_Fireball_05
+  N RB_Fireball_FX/RB_FX_Fireball_06
+  N RB_Fireball_FX/RB_FX_Fireball_07
+  N RB_Fireball_FX/RB_FX_Fireball_08
+  N RB_Fireball_FX/RB_FX_Fireball_09
+  N RB_Fireball_FX/RB_FX_Impact_Flash
+  N RB_Fireball_FX/RB_FX_Scorch
+  N RB_Fireball_FX/RB_FX_Shockwave_A
+  N RB_Fireball_FX/RB_FX_Shockwave_B
+  N RB_Fireball_FX/RB_FX_Smoke_00
+  N RB_Fireball_FX/RB_FX_Smoke_01
+  N RB_Fireball_FX/RB_FX_Smoke_02
+  N RB_Fireball_FX/RB_FX_Smoke_03
+  N RB_Fireball_FX/RB_FX_Smoke_04
+  N RB_Fireball_FX/RB_FX_Smoke_05
+  N RB_Fireball_FX/RB_FX_Spark_00
+  N RB_Fireball_FX/RB_FX_Spark_01
+  N RB_Fireball_FX/RB_FX_Spark_02
+  N RB_Fireball_FX/RB_FX_Spark_03
+  N RB_Fireball_FX/RB_FX_Spark_04
+  N RB_Fireball_FX/RB_FX_Spark_05
+  N RB_Fireball_FX/RB_FX_Spark_06
+  N RB_Fireball_FX/RB_FX_Spark_07
+  N RB_Fireball_FX/RB_FX_Spark_08
+  N RB_Fireball_FX/RB_FX_Spark_09
+  N RB_Fireball_FX/RB_FX_Spark_10
+  N RB_Fireball_FX/RB_FX_Spark_11
+  N RB_Fireball_FX/RB_FX_Spark_12
+  N RB_Fireball_FX/RB_FX_Spark_13
+  N RB_Fireball_FX/RB_FX_Spark_14
+=== Assets/RoyalBuddies/Models/RB_Gargouille.glb main=RB_Gargouille
+  Animator: RB_Gargouille (root=True)
+  LegacyAnimation: False
+  Bounds size=(5.28, 3.66, 1.86) center=(0.00, 1.83, 0.03)
+  R Gargouille_Rig/Arcade sévère D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Arcade sévère G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Armure épaule D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Armure épaule G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Avant-bras D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Avant-bras G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Bague de corne D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Bague de corne G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Barbe minérale SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Bassin SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Bouche scellée SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Bras aile D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Bras aile G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Bras D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Bras G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Collier SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Collier.001 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Corne arrière D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Corne arrière G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Corne couronne D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Corne couronne G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Cou SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Coude D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Coude G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Crâne SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Crête avant-bras D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Crête avant-bras G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Cuisse repliée D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Cuisse repliée G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Côtes D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Côtes G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Cœur féerique SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Diadème D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Diadème G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Doigt D0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Doigt D1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Doigt D2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Doigt G0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Doigt G1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Doigt G2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Gravure thorax SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Gravure thorax.001 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Gravure thorax.002 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Gravure thorax.003 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Gravure thorax.004 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Gravure thorax.005 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe alaire D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe alaire G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe main D0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe main D1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe main D2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe main G0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe main G1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe main G2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe pied D0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe pied D1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe pied D2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe pied G0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe pied G1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Griffe pied G2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile D0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile D1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile D2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile D3 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile D4 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile G0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile G1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile G2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile G3 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Incrustation aile G4 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Intérieur oreille D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Intérieur oreille G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Joyau frontal SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Liseré aile D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Liseré aile G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Lueur du cœur SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Main D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Main G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Membrane pétrifiée D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Membrane pétrifiée G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Museau SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Mâchoire SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile D0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile D1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile D2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile D3 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile D4 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile G0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile G1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile G2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile G3 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nervure aile G4 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Nez SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Orbite D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Orbite G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Oreille sculptée D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Oreille sculptée G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Pectoral D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Pectoral G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Pied D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Pied G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Pommette D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Pommette G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Pouce D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Pouce G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Queue SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Sceau alaire D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Sceau alaire G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Sertissage pectoral SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Tibia D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Tibia G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Torse SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épaule D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épaule G SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine dorsale 0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine dorsale 1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine dorsale 2 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine dorsale 3 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine dorsale 4 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine épaule D0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine épaule D1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine épaule G0 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Épine épaule G1 SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Œil lumineux D SkinnedMeshRenderer nocolor mats=1 active=True
+  R Gargouille_Rig/Œil lumineux G SkinnedMeshRenderer nocolor mats=1 active=True
+  M Pierre • crêtes argentées shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.575, 0.673, 0.708, 1.000)
+  M Pierre • ardoise enchantée shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.410, 0.527, 0.584, 1.000)
+  M Or ancien shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.755, 0.601, 0.349, 1.000)
+  M Obsidienne bleutée shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.260, 0.349, 0.403, 1.000)
+  M Interstices shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.093, 0.143, 0.186, 1.000)
+  M Cristal • céladon shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.381, 0.798, 0.780, 1.000)
+  M Ailes • schiste violet shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.381, 0.417, 0.527, 1.000)
+  M Magie • turquoise shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.396, 0.931, 0.891, 1.000)
+  M Pierre • ombres profondes shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.235, 0.304, 0.357, 1.000)
+  CLIP Gargouille_Attente_5s len=5 legacy=False loop=True fps=60 bindings=60
+  N 
+  N Gargouille_Rig
+  N Gargouille_Rig/Arcade sévère D
+  N Gargouille_Rig/Arcade sévère G
+  N Gargouille_Rig/Armure épaule D
+  N Gargouille_Rig/Armure épaule G
+  N Gargouille_Rig/Avant-bras D
+  N Gargouille_Rig/Avant-bras G
+  N Gargouille_Rig/Bague de corne D
+  N Gargouille_Rig/Bague de corne G
+  N Gargouille_Rig/Barbe minérale
+  N Gargouille_Rig/Bassin
+  N Gargouille_Rig/Bouche scellée
+  N Gargouille_Rig/Bras aile D
+  N Gargouille_Rig/Bras aile G
+  N Gargouille_Rig/Bras D
+  N Gargouille_Rig/Bras G
+  N Gargouille_Rig/Collier
+  N Gargouille_Rig/Collier.001
+  N Gargouille_Rig/Corne arrière D
+  N Gargouille_Rig/Corne arrière G
+  N Gargouille_Rig/Corne couronne D
+  N Gargouille_Rig/Corne couronne G
+  N Gargouille_Rig/Cou
+  N Gargouille_Rig/Coude D
+  N Gargouille_Rig/Coude G
+  N Gargouille_Rig/Crâne
+  N Gargouille_Rig/Crête avant-bras D
+  N Gargouille_Rig/Crête avant-bras G
+  N Gargouille_Rig/Cuisse repliée D
+  N Gargouille_Rig/Cuisse repliée G
+  N Gargouille_Rig/Côtes D
+  N Gargouille_Rig/Côtes G
+  N Gargouille_Rig/Cœur féerique
+  N Gargouille_Rig/Diadème D
+  N Gargouille_Rig/Diadème G
+  N Gargouille_Rig/Doigt D0
+  N Gargouille_Rig/Doigt D1
+  N Gargouille_Rig/Doigt D2
+  N Gargouille_Rig/Doigt G0
+  N Gargouille_Rig/Doigt G1
+  N Gargouille_Rig/Doigt G2
+  N Gargouille_Rig/Gravure thorax
+  N Gargouille_Rig/Gravure thorax.001
+  N Gargouille_Rig/Gravure thorax.002
+  N Gargouille_Rig/Gravure thorax.003
+  N Gargouille_Rig/Gravure thorax.004
+  N Gargouille_Rig/Gravure thorax.005
+  N Gargouille_Rig/Griffe alaire D
+  N Gargouille_Rig/Griffe alaire G
+  N Gargouille_Rig/Griffe main D0
+  N Gargouille_Rig/Griffe main D1
+  N Gargouille_Rig/Griffe main D2
+  N Gargouille_Rig/Griffe main G0
+  N Gargouille_Rig/Griffe main G1
+  N Gargouille_Rig/Griffe main G2
+  N Gargouille_Rig/Griffe pied D0
+  N Gargouille_Rig/Griffe pied D1
+  N Gargouille_Rig/Griffe pied D2
+  N Gargouille_Rig/Griffe pied G0
+  N Gargouille_Rig/Griffe pied G1
+  N Gargouille_Rig/Griffe pied G2
+  N Gargouille_Rig/Incrustation aile D0
+  N Gargouille_Rig/Incrustation aile D1
+  N Gargouille_Rig/Incrustation aile D2
+  N Gargouille_Rig/Incrustation aile D3
+  N Gargouille_Rig/Incrustation aile D4
+  N Gargouille_Rig/Incrustation aile G0
+  N Gargouille_Rig/Incrustation aile G1
+  N Gargouille_Rig/Incrustation aile G2
+=== Assets/RoyalBuddies/Models/RB_Geant_V1.glb main=RB_Geant_V1
+  Animator: RB_Geant_V1 (root=True)
+  LegacyAnimation: False
+  Bounds size=(2.74, 3.96, 1.37) center=(0.00, 1.78, 0.07)
+  R RB_Geant_Rig/RB_Geant_Corps SkinnedMeshRenderer COLOR_0(RGBA(153, 65, 35, 255)) mats=2 active=True
+  M MAT_RB_Geant_Peau_Cuir_Cheveux shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  M MAT_RB_Geant_Metal_Bronze shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  CLIP Attack_Double len=2,333 legacy=False loop=True fps=60 bindings=300
+  CLIP Attack_Left len=1,733 legacy=False loop=True fps=60 bindings=300
+  CLIP Attack_Right len=1,667 legacy=False loop=True fps=60 bindings=300
+  CLIP Death len=2,6 legacy=False loop=True fps=60 bindings=300
+  CLIP Hit len=0,6 legacy=False loop=True fps=60 bindings=300
+  CLIP Idle len=3 legacy=False loop=True fps=60 bindings=300
+  CLIP Run len=0,733 legacy=False loop=True fps=60 bindings=300
+  CLIP Walk len=1,2 legacy=False loop=True fps=60 bindings=300
+  N 
+  N RB_Geant_Rig
+  N RB_Geant_Rig/RB_Geant_Corps
+  N RB_Geant_Rig/Root
+  N RB_Geant_Rig/Root/Pelvis
+  N RB_Geant_Rig/Root/Pelvis/Spine
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Neck
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Neck/Head
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Beard_1
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Beard_1/Beard_2
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Braid_L
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Neck/Head/Braid_R
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.L
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/Forearm.L
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/Forearm.L/Hand.L
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/Forearm.L/Hand.L/Fingers_1.L
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/Forearm.L/Hand.L/Fingers_1.L/Fingers_2.L
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.L/UpperArm.L/Forearm.L/Hand.L/Thumb.L
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.R
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R/Forearm.R
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R/Forearm.R/Hand.R
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R/Forearm.R/Hand.R/Fingers_1.R
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R/Forearm.R/Hand.R/Fingers_1.R/Fingers_2.R
+  N RB_Geant_Rig/Root/Pelvis/Spine/Chest/Shoulder.R/UpperArm.R/Forearm.R/Hand.R/Thumb.R
+  N RB_Geant_Rig/Root/Pelvis/Thigh.L
+  N RB_Geant_Rig/Root/Pelvis/Thigh.L/Shin.L
+  N RB_Geant_Rig/Root/Pelvis/Thigh.L/Shin.L/Foot.L
+  N RB_Geant_Rig/Root/Pelvis/Thigh.R
+  N RB_Geant_Rig/Root/Pelvis/Thigh.R/Shin.R
+  N RB_Geant_Rig/Root/Pelvis/Thigh.R/Shin.R/Foot.R
+=== Assets/RoyalBuddies/Models/RB_Sorcier_V1.glb main=RB_Sorcier_V1
+  Animator: RB_Sorcier_V1 (root=True)
+  LegacyAnimation: False
+  Bounds size=(2.29, 2.88, 1.63) center=(0.09, 1.03, 0.04)
+  R RB_Wizard_Rig/RoyalBuddies_Sorcier_V1 SkinnedMeshRenderer COLOR_0(RGBA(29, 10, 80, 255)) mats=3 active=True
+  M MAT_RB_Sorcier_Tissu shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(1.000, 1.000, 1.000, 1.000)
+  M MAT_RB_Sorcier_OrVieilli shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.780, 0.604, 0.220, 1.000)
+  M MAT_RB_Sorcier_Cristal shader=Shader Graphs/glTF-pbrMetallicRoughness color=RGBA(0.152, 0.537, 0.626, 1.000)
+  CLIP Attack len=1,6 legacy=False loop=True fps=60 bindings=360
+  CLIP Death len=2 legacy=False loop=True fps=60 bindings=360
+  CLIP Idle len=2 legacy=False loop=True fps=60 bindings=360
+  CLIP Walk len=1,067 legacy=False loop=True fps=60 bindings=360
+  N 
+  N RB_Wizard_Rig
+  N RB_Wizard_Rig/RoyalBuddies_Sorcier_V1
+  N RB_Wizard_Rig/Root
+  N RB_Wizard_Rig/Root/Hips
+  N RB_Wizard_Rig/Root/Hips/Robe_B_1
+  N RB_Wizard_Rig/Root/Hips/Robe_B_1/Robe_B_2
+  N RB_Wizard_Rig/Root/Hips/Robe_F_1
+  N RB_Wizard_Rig/Root/Hips/Robe_F_1/Robe_F_2
+  N RB_Wizard_Rig/Root/Hips/Robe_L_1
+  N RB_Wizard_Rig/Root/Hips/Robe_L_1/Robe_L_2
+  N RB_Wizard_Rig/Root/Hips/Robe_R_1
+  N RB_Wizard_Rig/Root/Hips/Robe_R_1/Robe_R_2
+  N RB_Wizard_Rig/Root/Hips/Spine
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Neck
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Neck/Head
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Neck/Head/Beard_1
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Neck/Head/Beard_1/Beard_2
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Neck/Head/Beard_1/Beard_2/Beard_3
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Neck/Head/HoodTip_1
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Neck/Head/HoodTip_1/HoodTip_2
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.L
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.L/UpperArm.L
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.L/UpperArm.L/LowerArm.L/Hand.L
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.R
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Staff
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Staff/Crystal
+  N RB_Wizard_Rig/Root/Hips/Spine/Chest/Shoulder.R/UpperArm.R/LowerArm.R/Hand.R/Staff/Crystal/Projectile_Spawn
+  N RB_Wizard_Rig/Root/Hips/UpperLeg.L
+  N RB_Wizard_Rig/Root/Hips/UpperLeg.L/LowerLeg.L
+  N RB_Wizard_Rig/Root/Hips/UpperLeg.L/LowerLeg.L/Foot.L
+  N RB_Wizard_Rig/Root/Hips/UpperLeg.R
+  N RB_Wizard_Rig/Root/Hips/UpperLeg.R/LowerLeg.R
+  N RB_Wizard_Rig/Root/Hips/UpperLeg.R/LowerLeg.R/Foot.R

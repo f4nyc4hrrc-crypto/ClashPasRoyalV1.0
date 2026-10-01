@@ -1,0 +1,22 @@
+{
+    "name": "RoyalBuddies.Editor",
+    "rootNamespace": "RoyalBuddies.EditorTools",
+    "references": [
+        "RoyalBuddies.Runtime",
+        "Unity.AI.Navigation",
+        "Unity.AI.Navigation.Editor",
+        "Unity.InputSystem",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

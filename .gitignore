@@ -1,1 +1,36 @@
-index_screen.png.png
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+
+# Builds (publish WebGL separately, e.g. GitHub Pages artifact)
+[Bb]uild/
+[Bb]uilds/
+
+# IDE / OS
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+.DS_Store
+Thumbs.db
+
+# Crash / diagnostics
+sysinfo.txt
+*.stacktrace
+
+# Unity package artifacts
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Keep source assets and their .meta files

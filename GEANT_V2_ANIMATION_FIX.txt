@@ -1,7 +1,0 @@
-Royal Buddies V7.1 - Giant V2 animation fix
-- Giant scale increased from 0.31 to 0.52.
-- Giant AnimationPlayer now runs in IDLE process instead of manual stepping.
-- Idle/Walk/Attack/Death therefore play natively in Godot.
-- Freeze pauses the Giant animation with speed_scale=0 and resumes it afterward.
-- Death waits for the real Death clip length before removing the unit.
-- Building-only Giant targeting unchanged.

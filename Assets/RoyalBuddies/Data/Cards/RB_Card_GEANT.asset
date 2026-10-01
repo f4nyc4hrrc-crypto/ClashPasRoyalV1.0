@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3dfeff9b3029545b153dff4307d732, type: 3}
+  m_Name: RB_Card_GEANT
+  m_EditorClassIdentifier: RoyalBuddies.Runtime::RoyalBuddies.CardData
+  id: GEANT
+  displayName: "G\xC9ANT"
+  cost: 6
+  kind: 0
+  troop: {fileID: 11400000, guid: 5fc3c8a9c111fd742b3d7903f1ac37f5, type: 2}
+  spell: 0
+  catalogIndex: 13
+  portraitRect:
+    serializedVersion: 2
+    x: 329
+    y: 481
+    width: 170
+    height: 151
+  portraitIsSeparateTexture: 0
+  accent: {r: 0.654902, g: 0.42352942, b: 0.2627451, a: 1}

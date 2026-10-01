@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda620a5b0d115947a1581e11f695555, type: 3}
+  m_Name: RB_GameAssets
+  m_EditorClassIdentifier: RoyalBuddies.Runtime::RoyalBuddies.RBGameAssets
+  cards:
+  - {fileID: 11400000, guid: 606549895571e384797d44ef0ae72d0e, type: 2}
+  - {fileID: 11400000, guid: c4bc54ba81e0b3841b6701610e976cfc, type: 2}
+  - {fileID: 11400000, guid: 2ee2ed86ef8d80f4e82447b80b08e5d9, type: 2}
+  - {fileID: 11400000, guid: b3f2547607fbbe140a85b3e1ed846c23, type: 2}
+  - {fileID: 11400000, guid: cce7fc04d8fb55f49befbc9af5336fd3, type: 2}
+  - {fileID: 11400000, guid: 95c50e30d25377a4aabd01d4ab741e2c, type: 2}
+  - {fileID: 11400000, guid: 7d200ea8adc6028458dd5db0daadd91f, type: 2}
+  - {fileID: 11400000, guid: 45fc64b642ad3504ba896e4121479a15, type: 2}
+  - {fileID: 11400000, guid: 8816d63254796264aa611e06c804b21e, type: 2}
+  - {fileID: 11400000, guid: b2dedbad4f55b2840a7af31d08afa328, type: 2}
+  - {fileID: 11400000, guid: 4b5ace2fd36753c448ef62b6272e699c, type: 2}
+  - {fileID: 11400000, guid: 1b68b2f8e917d114fb1d60e5ec71e7c9, type: 2}
+  - {fileID: 11400000, guid: 3d952a97dfd488641b66a1d8ef7d2d22, type: 2}
+  - {fileID: 11400000, guid: 56313dc53e5686442baf0cbc7d846ac0, type: 2}
+  - {fileID: 11400000, guid: 5586c424e09597e4fb338f11c3c4750c, type: 2}
+  litMaterial: {fileID: 2100000, guid: affa2f62b7c766b4993e326a48276a96, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: 6744eac56d06f7046b2667430d1c177c, type: 2}
+  particleMaterial: {fileID: 2100000, guid: 9fda7ed0c36e6bf459da07c8add2981a, type: 2}
+  vertexColorMaterial: {fileID: 2100000, guid: 7fbdcdded74f76d49a77148af8fc4acb, type: 2}
+  fireballPrefab: {fileID: 8771091787928289351, guid: 685922c38b7383f4aa2168720c67540d, type: 3}
+  mageTowerModel: {fileID: 919132149155446097, guid: d052d933598dac241a51c227cfe7a313, type: 3}
+  mageTowerPlayerMaterial: {fileID: 2100000, guid: 3feabe4f9f5f45a08a331b7159340887, type: 2}
+  mageTowerEnemyMaterial: {fileID: 2100000, guid: 80bbe8140a474869af452b84882d405a, type: 2}
+  vikingLayout: {fileID: 4900000, guid: d7a800d8f0604dce918780eece9e6b3d, type: 3}
+  vikingModels:
+  - {fileID: -9110794223079429298, guid: e632884e10e143c9a5ff618bcbcd64c7, type: 3}
+  - {fileID: 5237056682286816707, guid: 1c3239345e4c4c779ffcb3967d5bdf0e, type: 3}
+  - {fileID: -4720339059088614671, guid: 69fbbc17219b472e925bed623be06deb, type: 3}
+  - {fileID: -7010193341498482606, guid: 4e3ff398c488474aba98b5a2d69b9e47, type: 3}
+  - {fileID: 5796377049573765158, guid: 97718330f8cb465aa338c65f0e5e3225, type: 3}
+  - {fileID: 793382042305435997, guid: a68496d720b740519d09a43e6ba3c601, type: 3}
+  - {fileID: 5042357770150343753, guid: 5fe13df7924b47058bdf331e0e059339, type: 3}
+  - {fileID: -1830672614116749455, guid: daed1b8f829b477f8ac76026a034d2e7, type: 3}
+  - {fileID: -4787029465102122016, guid: 28959ec83ef146e08c4fb22e4e4a9266, type: 3}
+  - {fileID: 6094538099317904739, guid: 74d79893c6de40b6b1335e8083a27270, type: 3}
+  - {fileID: 6863474881816359419, guid: 86f2dae360594c908d399b518ef924a6, type: 3}
+  - {fileID: -2555351080640010661, guid: 029c8f9a785a42f4931c6eaf925fd5d3, type: 3}
+  - {fileID: 1213590415957461763, guid: b0ffc0975f714e53aeb3b6e04ce778a7, type: 3}
+  - {fileID: -550855255766760615, guid: 293cfe7d6a67492a8c1be75459465527, type: 3}
+  - {fileID: 2909589509128895956, guid: 68f54e0afd924db09b27bf56f2683d21, type: 3}
+  - {fileID: -8178790184698148185, guid: 8cf50ec166d043e88688cc66917756cb, type: 3}
+  - {fileID: -6371598042127400108, guid: 33af8cc5ccd84dbcb6686207fc8118a0, type: 3}
+  - {fileID: 7642842482099601997, guid: 2adc107f1c6f4ad1b6ce91e5593982e6, type: 3}
+  - {fileID: -2313002782357130857, guid: ad0ce6f6da6244c7a3c636a7abfe3b13, type: 3}
+  - {fileID: 1759919886786038482, guid: 7254ba6507a7441c8563cffd724e1e12, type: 3}
+  - {fileID: 4000043216182394150, guid: 93e5e8996c5642e5a44df5c1b36b4727, type: 3}
+  - {fileID: -4840013036685889095, guid: c7ebab150c654d7e9a4fe3d18b77a9d1, type: 3}
+  - {fileID: 612801080514292839, guid: 206cf66160a34a91ab2b3f6dfc1995ff, type: 3}
+  - {fileID: -4058971691094055638, guid: d0fe3806a51b41fa9dd20262e46602c3, type: 3}
+  - {fileID: -8497262272993649291, guid: d785640239d34313a64acc8c9253052e, type: 3}
+  - {fileID: 7638859865476528704, guid: f1be5bb849974ec0a064c9af6bf8448f, type: 3}
+  - {fileID: -6347625365544045617, guid: 3ab9fb193e7b48dc9badd5d112ce74b3, type: 3}
+  - {fileID: 8278549227862842245, guid: 900ec98d28f6477a9174b3efbc9969c1, type: 3}
+  - {fileID: -7992052652986542680, guid: 5d5413d9ffee4e9c86b487ce1c914f4d, type: 3}
+  - {fileID: -1999599542533532556, guid: 773558b559a04a9fbcd0e9e19448ce9b, type: 3}
+  - {fileID: -122141723337228263, guid: 6c2e8f3c846049a0b230ebc59857737e, type: 3}
+  - {fileID: -5101769974147775888, guid: faf1c911462042738526fc6277bd98e5, type: 3}
+  - {fileID: 6631471138143789992, guid: 39ada460a220464199c5c19b5bbeb51f, type: 3}
+  - {fileID: -6399387781660903837, guid: bd56e96922654fa7959dad4f3f543c88, type: 3}
+  - {fileID: -8141139907493406054, guid: 227f04da55d642a6bff7addee1c9e84f, type: 3}
+  - {fileID: -6213630069194684252, guid: 5bcd905ca70845659abfb0cbb92ccda4, type: 3}
+  - {fileID: -784549420774763990, guid: 83acd74a09c244b495291354988b2a58, type: 3}
+  - {fileID: -8945593684981407699, guid: fd5da44ef95e4af8b9a45b24562193cb, type: 3}
+  - {fileID: -2150104890012458779, guid: 7399483a662f4583821ae35588bf9a46, type: 3}
+  - {fileID: 1217989842247116694, guid: 14012c88e4014405ae230b8cb2dbb4ae, type: 3}
+  - {fileID: -307461256171805198, guid: fe644be0868943efb67535f5301c23dd, type: 3}
+  - {fileID: 101876558211287462, guid: 8ef6974411154261b4e5a59abb9f0468, type: 3}
+  - {fileID: -8636174856398033682, guid: e573a6b67a9d4adea31e4a3092a07d6d, type: 3}
+  - {fileID: -122141723337228263, guid: eb354e1ed0c74a2d88e5ec83622ede2b, type: 3}
+  - {fileID: 7256598521999461401, guid: d22bbcad55ae46abb0c7c0486d3fd621, type: 3}
+  - {fileID: -4565050308417298978, guid: 5eb1f1e5d0fb46639ecc7a7ee7242b6f, type: 3}
+  - {fileID: -6399387781660903837, guid: 4859f78ec20f446c809bb2dd2158b9ad, type: 3}
+  - {fileID: -8093080147875005063, guid: a34db8754653416a87e9d704da7a10c5, type: 3}
+  - {fileID: 5299284380374158529, guid: e9f93f50dfa84d00a0b56005d8e9e910, type: 3}
+  - {fileID: 8023305646252132456, guid: ddf09edef57742468aafa56f956d3d79, type: 3}
+  - {fileID: -2355846702447306040, guid: 9337a56af87a49e085e7a32d0ac45c85, type: 3}
+  - {fileID: 1524779395540129905, guid: 5588187461e54d4e9872fa01c0d31774, type: 3}
+  - {fileID: 2962516456017578339, guid: 34e7eec85933495992bccc86589d0740, type: 3}
+  - {fileID: -5427795549877933960, guid: 3a907f5959154c1ba1d004d9659ef4e8, type: 3}
+  - {fileID: 2917584440785439922, guid: c2d7732e15ee4144b116fe92b1ce3505, type: 3}
+  - {fileID: 1821782525456830740, guid: e16a7c7e9da243009127f0714dfdbab3, type: 3}
+  - {fileID: -2398377885531207136, guid: b89647bec99b43869d1a77e127cb47f0, type: 3}
+  - {fileID: 1114045602477779115, guid: 0b5ac9af1f7f469dbade8abd110b7fa8, type: 3}
+  - {fileID: 9109434365453305017, guid: 1525755e3be64cccbc50ade6cee971d6, type: 3}
+  - {fileID: 5845227059672221932, guid: cc9b9a2996ca43a98fae6f0c85826ebe, type: 3}
+  - {fileID: -8919264229978899601, guid: 594f0eb62b704946bb6db318d34cec3c, type: 3}
+  - {fileID: -6460902477262453446, guid: 6fcecefffea34ded8bf4071183e4deb0, type: 3}
+  - {fileID: -2019161869397143843, guid: 18a6967a8b43454abed1d75cce46e884, type: 3}
+  - {fileID: 3231280188299229389, guid: 942e597cd41b4ed697da80b32f13badc, type: 3}
+  - {fileID: 7740108449657491191, guid: d9782e60f41a4bae8c4ea31ba4a2ef40, type: 3}
+  - {fileID: -8643882825069934325, guid: 4b60c7459b2943129407b3f358e57815, type: 3}
+  - {fileID: -8842260282777525912, guid: dde55527a8794036959b425fd7941fd5, type: 3}
+  - {fileID: -4650698874806015312, guid: 64ca4333ff734c0a86d5a8397949857f, type: 3}
+  vikingModelNames:
+  - castle_flag-banner-long
+  - nature_canoe
+  - nature_flower_purpleA
+  - nature_flower_yellowA
+  - nature_grass_large
+  - nature_lily_large
+  - nature_log_large
+  - nature_log_stack
+  - nature_log_stackLarge
+  - nature_mushroom_redGroup
+  - nature_plant_bush
+  - nature_plant_bushLarge
+  - nature_rock_largeA
+  - nature_rock_largeB
+  - nature_rock_tallA
+  - nature_rock_tallB
+  - nature_statue_block
+  - nature_statue_obelisk
+  - nature_stone_tallA
+  - nature_stump_old
+  - nature_stump_round
+  - nature_tree_pineDefaultA
+  - nature_tree_pineDefaultB
+  - nature_tree_pineRoundA
+  - nature_tree_pineRoundB
+  - nature_tree_pineRoundC
+  - nature_tree_pineTallA
+  - nature_tree_pineTallB
+  - nature_tree_pineTallC
+  - nature_tree_pineTallD
+  - pirate_barrel
+  - pirate_boat-row-large
+  - pirate_boat-row-small
+  - pirate_chest
+  - pirate_crate
+  - pirate_flag-high-pennant
+  - pirate_rocks-a
+  - pirate_rocks-b
+  - pirate_rocks-c
+  - pirate_ship-small
+  - pirate_structure-platform-dock-small
+  - pirate_structure-platform-dock
+  - survival_barrel-open
+  - survival_barrel
+  - survival_campfire-pit
+  - survival_campfire-stand
+  - survival_chest
+  - survival_fence-fortified
+  - survival_resource-wood
+  - survival_signpost
+  - survival_tent-canvas
+  - survival_tent
+  - survival_tool-axe
+  - survival_workbench-anvil
+  - survival_workbench
+  - town_banner-red
+  - town_cart
+  - town_chimney
+  - town_lantern
+  - town_pillar-wood
+  - town_planks
+  - town_roof-high-gable-end
+  - town_roof-high-gable
+  - town_stall-red
+  - town_wall-wood-door
+  - town_wall-wood-window-shutters
+  - town_wall-wood
+  - town_watermill
+  flowWaterMaterial: {fileID: 2100000, guid: a67eb42434eb0c24490ac9a8660fe5b1, type: 2}
+  waterfallMaterial: {fileID: 2100000, guid: f62002cb53f165e43b68b2b70f0b4edb, type: 2}
+  cardsAtlas: {fileID: 2800000, guid: e39f8b9f2aa1f514595a1414b727541b, type: 3}
+  zapTexture: {fileID: 2800000, guid: edb4f3de1dde69e49820f11eca93ad8e, type: 3}
+  hudAtlas: {fileID: 2800000, guid: de1e726e151768f4684c9cd552684114, type: 3}
+  pauseSkin: {fileID: 2800000, guid: 0652dcb401de6eb4c8df1a8746c853e2, type: 3}
+  fluidWood: {fileID: 2800000, guid: 13a76f8726f0d2c45b8bf0f003e12a06, type: 3}
+  fluidDrop: {fileID: 2800000, guid: ecbfb152b3c6f2845a6db1f542170100, type: 3}
+  menuSkin: {fileID: 2800000, guid: d90368c2993289a44963d1ec891ef472, type: 3}
+  scenery: {fileID: 2800000, guid: 3e00fe9ada8d55f42a050ba222ac34cd, type: 3}
+  settingsGear: {fileID: 2800000, guid: c69b7c69ac7f06c4b83c25f9c79c0f03, type: 3}
+  loadingScreen: {fileID: 2800000, guid: 50fa5b32cd1eece4b933a1a6f50b4bf9, type: 3}
+  menuMusic: {fileID: 8300000, guid: 2608a984185cd77408e00e3fac714f3c, type: 3}
+  battleMusic: {fileID: 8300000, guid: 042984f7ae85bd44090c373e5143d665, type: 3}

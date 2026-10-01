@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dc0ef48a90c5849b21bc33ecfc8af0, type: 3}
+  m_Name: RB_Troop_GARGOUILLE
+  m_EditorClassIdentifier: RoyalBuddies.Runtime::RoyalBuddies.TroopData
+  id: GARGOUILLE
+  displayName: GARGOUILLE
+  hp: 700
+  damage: 120
+  speed: 3.15
+  range: 1.35
+  attackInterval: 1.1
+  size: 0.48
+  attackKind: 0
+  splashRadius: 0
+  isAir: 1
+  buildingsOnly: 0
+  canHitAir: 1
+  jumpsRiver: 0
+  prefab: {fileID: 2857803328901685753, guid: ea3f1e8388ceb254ba307cf0a56595e0, type: 3}
+  rigKind: 2
+  spawnHeight: 1.75
+  hpBarHeight: 2.75
+  hpBarWidth: 1.48
+  armorColor: {r: 1, g: 1, b: 1, a: 1}
+  attackStates: []
+  attackWeights: []
+  noImmediateRepeat: 1
+  animBlend: 0
+  hasHitAnimation: 0
+  sprintDuration: 0
+  useAnimationEvents: 0
+  impactNormalizedTime: 0.45

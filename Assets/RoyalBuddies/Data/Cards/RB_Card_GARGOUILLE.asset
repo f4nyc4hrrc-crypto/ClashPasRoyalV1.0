@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3dfeff9b3029545b153dff4307d732, type: 3}
+  m_Name: RB_Card_GARGOUILLE
+  m_EditorClassIdentifier: RoyalBuddies.Runtime::RoyalBuddies.CardData
+  id: GARGOUILLE
+  displayName: GARGOUILLE
+  cost: 3
+  kind: 0
+  troop: {fileID: 11400000, guid: 11ff0b9a34b535d43ac9037f5ba4440c, type: 2}
+  spell: 0
+  catalogIndex: 14
+  portraitRect:
+    serializedVersion: 2
+    x: 533
+    y: 267
+    width: 171
+    height: 154
+  portraitIsSeparateTexture: 0
+  accent: {r: 0.43529412, g: 0.50980395, b: 0.65882355, a: 1}

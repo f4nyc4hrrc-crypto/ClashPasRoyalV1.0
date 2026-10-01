@@ -11,6 +11,9 @@ Recordings/
 [Bb]uild/
 [Bb]uilds/
 
+# Autoriser le build WebGL destiné à GitHub Pages
+!WebGL/Build/
+!WebGL/Build/**
 # IDE / OS
 .vs/
 .idea/

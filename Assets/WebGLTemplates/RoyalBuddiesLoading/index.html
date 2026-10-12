@@ -2,6 +2,97 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
+        <meta name="rb-shell-version" content="2026-10-12-cache-1">
+        <script>
+        // Version de la page et du visuel : changer ensemble à chaque publication.
+        window.rbShellReady = (async function () {
+            const version = document.querySelector('meta[name="rb-shell-version"]').content;
+            const page = new URL(location.href);
+            const directory = new URL('./', page);
+            const report = window.rbCacheReport = { version, serviceWorkers: [], status: 'checking' };
+
+            // Inspection uniquement des workers du dossier du jeu. Aucun effacement,
+            // désenregistrement ou activation forcée ; les autres projets sont ignorés.
+            if ('serviceWorker' in navigator && window.isSecureContext) {
+                navigator.serviceWorker.getRegistrations().then(function (registrations) {
+                    for (const registration of registrations) {
+                        if (registration.scope !== directory.href) continue;
+                        const worker = registration.active || registration.waiting || registration.installing;
+                        if (!worker) continue;
+                        const script = new URL(worker.scriptURL);
+                        if (script.origin !== directory.origin || !script.pathname.startsWith(directory.pathname)) continue;
+                        report.serviceWorkers.push({ scope: registration.scope, script: script.href });
+                        registration.update().catch(error => console.warn('[Royal Buddies] Worker :', error));
+                    }
+                    if (navigator.serviceWorker.controller) {
+                        report.controller = navigator.serviceWorker.controller.scriptURL;
+                        console.info('[Royal Buddies] Un worker contrôle cette page :', report.controller);
+                    }
+                }).catch(error => console.warn('[Royal Buddies] Inspection worker :', error));
+            }
+
+            if (!/^https?:$/.test(page.protocol) || typeof fetch !== 'function') {
+                report.status = 'local';
+                return true;
+            }
+            const controller = new AbortController();
+            let timer;
+            try {
+                const probe = new URL(page.href);
+                probe.hash = '';
+                probe.searchParams.delete('rb_refresh');
+                probe.searchParams.delete('rb_probe');
+                probe.searchParams.set('rb_probe', Date.now() + '-' + Math.random().toString(36).slice(2));
+                // no-store contourne le cache HTTP, pas un worker qui ignore la requête.
+                const response = await Promise.race([
+                    (async function () {
+                        const result = await fetch(probe.href, {
+                            cache: 'no-store', credentials: 'same-origin',
+                            mode: 'same-origin', redirect: 'error', signal: controller.signal
+                        });
+                        if (!result.ok || !(result.headers.get('content-type') || '').includes('text/html')) {
+                            throw new Error('Réponse HTML indisponible');
+                        }
+                        return await result.text();
+                    })(),
+                    new Promise((_, reject) => {
+                        timer = setTimeout(() => { controller.abort(); reject(new Error('Vérification expirée')); }, 2500);
+                    })
+                ]);
+                const latest = new DOMParser().parseFromString(response, 'text/html')
+                    .querySelector('meta[name="rb-shell-version"]');
+                const nextVersion = latest && latest.content;
+                if (!nextVersion || !/^[a-zA-Z0-9._-]{1,80}$/.test(nextVersion)) {
+                    report.status = 'unversioned';
+                    return true;
+                }
+                if (nextVersion !== version) {
+                    // Une seule navigation pendant 60 secondes, même si un worker
+                    // renvoie encore une ancienne page. Aucun stockage local utilisé.
+                    const attempted = Number(page.searchParams.get('rb_refresh'));
+                    const age = Date.now() - attempted;
+                    if (attempted > 0 && age >= 0 && age < 60000) {
+                        report.status = 'refresh-blocked';
+                        console.warn('[Royal Buddies] Ancienne page persistante ; vérifier le worker.', report);
+                        return true;
+                    }
+                    page.searchParams.delete('rb_probe');
+                    page.searchParams.set('rb_refresh', String(Date.now()));
+                    report.status = 'refreshing';
+                    location.replace(page.href);
+                    return false;
+                }
+                report.status = 'current';
+            } catch (error) {
+                report.status = 'unavailable';
+                console.info('[Royal Buddies] Vérification indisponible ; lancement de la page disponible.', error);
+            } finally {
+                clearTimeout(timer);
+            }
+            return true;
+        })();
+        </script>
+
 			<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 				<title>Royal Buddies</title>
 				<style>
@@ -23,23 +114,13 @@
 					position: fixed;
 					inset: 0;
 					z-index: 10;
-					background: #101b21 url("TemplateData/RB_loading_screen.png")
+					background: #101b21 url("TemplateData/RB_loading_screen.png?rb_v=2026-10-12-cache-1")
 					center center / cover no-repeat;
 					display: flex;
 					align-items: flex-end;
 					justify-content: center;
-					padding-bottom: calc(5vh + env(safe-area-inset-bottom, 0px));
+					padding-bottom: max(8vh, 35px);
 					transition: opacity 0.5s ease;
-					}
-					@supports (height: 100dvh) {
-					  #loading { height: 100dvh; }
-					}
-					@media (max-width: 600px) {
-					  #loading {
-					    background-position: center center;
-					    padding-bottom: calc(5vh + env(safe-area-inset-bottom, 0px));
-					  }
-					  #progress-container { width: min(78%, 340px); }
 					}
 					#progress-container {
 					width: min(75%, 340px);
@@ -76,9 +157,25 @@
 			</div>
 		</div>
 
-		<script src="Build/{{{ LOADER_FILENAME }}}"></script>
+		
 		<script>
-			const canvas = document.querySelector("#unity-canvas");
+			// Vérification avant Unity : aucun rechargement en cours de partie.
+            (async function () {
+            if (!(await window.rbShellReady)) return;
+            try {
+                await new Promise(function (resolve, reject) {
+                    const script = document.createElement('script');
+                    script.src = "Build/{{{ LOADER_FILENAME }}}";
+                    script.onload = resolve;
+                    script.onerror = () => reject(new Error('Chargeur Unity indisponible'));
+                    document.body.appendChild(script);
+                });
+            } catch (error) {
+                document.querySelector('#progress-text').textContent = 'Erreur de chargement';
+                console.error(error);
+                return;
+            }
+            const canvas = document.querySelector("#unity-canvas");
 			const loading = document.querySelector("#loading");
 			const bar = document.querySelector("#progress-bar");
 			const label = document.querySelector("#progress-text");
@@ -125,6 +222,7 @@
 			label.textContent = "Erreur de chargement";
 			console.error(error);
 			});
+		})();
 		</script>
 	</body>
 </html>

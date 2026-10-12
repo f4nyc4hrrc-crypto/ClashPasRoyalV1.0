@@ -24,12 +24,22 @@
 					inset: 0;
 					z-index: 10;
 					background: #101b21 url("TemplateData/RB_loading_screen.png")
-					center center / contain no-repeat;
+					center center / cover no-repeat;
 					display: flex;
 					align-items: flex-end;
 					justify-content: center;
-					padding-bottom: max(8vh, 35px);
+					padding-bottom: calc(5vh + env(safe-area-inset-bottom, 0px));
 					transition: opacity 0.5s ease;
+					}
+					@supports (height: 100dvh) {
+					  #loading { height: 100dvh; }
+					}
+					@media (max-width: 600px) {
+					  #loading {
+					    background-position: center center;
+					    padding-bottom: calc(5vh + env(safe-area-inset-bottom, 0px));
+					  }
+					  #progress-container { width: min(78%, 340px); }
 					}
 					#progress-container {
 					width: min(75%, 340px);

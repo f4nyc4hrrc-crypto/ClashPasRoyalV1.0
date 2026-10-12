@@ -1,45 +1,120 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Royal Buddies</title>
-  </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width="960" height="600" tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/WebGL.loader.js"></script>
-    <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+				<title>Royal Buddies</title>
+				<style>
+					* { box-sizing: border-box; }
+					html, body {
+					margin: 0;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					background: #101b21;
+					}
+					#unity-canvas {
+					display: block;
+					width: 100%;
+					height: 100%;
+					background: #101b21;
+					}
+					#loading {
+					position: fixed;
+					inset: 0;
+					z-index: 10;
+					background: #101b21 url("TemplateData/RB_loading_screen.png")
+					center center / contain no-repeat;
+					display: flex;
+					align-items: flex-end;
+					justify-content: center;
+					padding-bottom: max(8vh, 35px);
+					transition: opacity 0.5s ease;
+					}
+					#progress-container {
+					width: min(75%, 340px);
+					text-align: center;
+					color: white;
+					font: bold 15px Arial, sans-serif;
+					text-shadow: 0 2px 5px #000;
+					}
+					#progress-track {
+					height: 18px;
+					border: 2px solid #d8ad52;
+					border-radius: 12px;
+					overflow: hidden;
+					background: #18252b;
+					margin-bottom: 10px;
+					}
+					#progress-bar {
+					width: 0%;
+					height: 100%;
+					background: linear-gradient(90deg, #2c9e77, #80e6b5);
+					transition: width .15s ease;
+					}
+				</style>
+			</head>
+	<body>
+		<canvas id="unity-canvas" tabindex="-1"></canvas>
 
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
-        canvas.style.position = "fixed";
+		<div id="loading">
+			<div id="progress-container">
+				<div id="progress-track">
+					<div id="progress-bar"></div>
+				</div>
+				<span id="progress-text">Chargement... 0%</span>
+			</div>
+		</div>
 
-        document.body.style.textAlign = "left";
+		<script src="Build/WebGL_test_Loading.loader.js"></script>
+		<script>
+			const canvas = document.querySelector("#unity-canvas");
+			const loading = document.querySelector("#loading");
+			const bar = document.querySelector("#progress-bar");
+			const label = document.querySelector("#progress-text");
 
-      }
+			const mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        arguments: [],
-        dataUrl: "Build/WebGL.data.unityweb",
-        frameworkUrl: "Build/WebGL.framework.js.unityweb",
-        codeUrl: "Build/WebGL.wasm.unityweb",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Royal Buddies",
-        productName: "Royal Buddies",
-        productVersion: "0.1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      }).then((unityInstance) => {
-      }).catch((message) => {
-        alert(message);
-      });
-    </script>
-  </body>
+			if (mobile) {
+			canvas.style.width = "100%";
+			canvas.style.height = "100%";
+			} else {
+			canvas.style.width = "100%";
+			canvas.style.height = "100%";
+			}
+			const debutChargement = performance.now();
+			createUnityInstance(canvas, {
+			arguments: [],
+			dataUrl: "Build/WebGL_test_Loading.data.unityweb",
+			frameworkUrl: "Build/WebGL_test_Loading.framework.js.unityweb",
+			codeUrl: "Build/WebGL_test_Loading.wasm.unityweb",
+			streamingAssetsUrl: "StreamingAssets",
+			companyName: "Royal Buddies",
+			productName: "Royal Buddies",
+			productVersion: "0.1.0"
+			}, function(progress) {
+			const percent = Math.round(progress * 100);
+			bar.style.width = percent + "%";
+			label.textContent = "Chargement... " + percent + "%";
+			}).then(async function() {
+  const tempsEcoule = performance.now() - debutChargement;
+  const attente = Math.max(0, 3000 - tempsEcoule);
+
+  await new Promise(resolve => setTimeout(resolve, attente));
+
+  bar.style.width = "100%";
+  label.textContent = "Chargement... 100%";
+
+  loading.style.opacity = "0";
+
+  setTimeout(function() {
+    loading.style.display = "none";
+  }, 500);
+			
+			}).catch(function(error) {
+			label.textContent = "Erreur de chargement";
+			console.error(error);
+			});
+		</script>
+	</body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-        <meta name="rb-shell-version" content="2026-10-12-cache-1">
+        <meta name="rb-shell-version" content="2026-10-13-v2-local-1">
         <script>
         // Version de la page et du visuel : changer ensemble à chaque publication.
         window.rbShellReady = (async function () {
@@ -102,36 +102,38 @@
 					width: 100%;
 					height: 100%;
 					overflow: hidden;
-					background: #101b21;
+                            overscroll-behavior: none;
+					background: #102a3c;
 					}
 					#unity-canvas {
 					display: block;
 					width: 100%;
 					height: 100%;
-					background: #101b21;
+					background: #102a3c;
 					}
 					#loading {
 					position: fixed;
 					inset: 0;
 					z-index: 10;
-					background: #101b21 url("TemplateData/RB_loading_screen.png?rb_v=2026-10-12-cache-1")
+					background: #102a3c url("TemplateData/RB_loading_screen.png?rb_v=2026-10-13-v2-local-1")
 					center center / cover no-repeat;
 					display: flex;
 					align-items: flex-end;
 					justify-content: center;
-					padding-bottom: max(8vh, 35px);
+					padding-bottom: max(6vh, calc(env(safe-area-inset-bottom, 0px) + 24px));
 					transition: opacity 0.5s ease;
 					}
 					#progress-container {
-					width: min(75%, 340px);
+					width: min(82%, 620px);
 					text-align: center;
 					color: white;
-					font: bold 15px Arial, sans-serif;
+					font: bold 16px Arial, sans-serif;
 					text-shadow: 0 2px 5px #000;
 					}
 					#progress-track {
-					height: 18px;
-					border: 2px solid #d8ad52;
+					height: 24px;
+					border: 3px solid #efb949;
+                            box-shadow: 0 0 0 2px #55331c, inset 0 2px 4px #050d16, 0 4px 12px #000;
 					border-radius: 12px;
 					overflow: hidden;
 					background: #18252b;
@@ -140,7 +142,8 @@
 					#progress-bar {
 					width: 0%;
 					height: 100%;
-					background: linear-gradient(90deg, #2c9e77, #80e6b5);
+					background: linear-gradient(180deg, #65e9ff 0%, #149dec 45%, #0871d5 100%);
+                            box-shadow: inset 0 2px 0 rgba(255,255,255,.65), 0 0 12px #039eff;
 					transition: width .15s ease;
 					}
 				</style>
@@ -165,7 +168,7 @@
             try {
                 await new Promise(function (resolve, reject) {
                     const script = document.createElement('script');
-                    script.src = "Build/WebGL_test_Loading.loader.js";
+                    script.src = "Build/RoyalBuddiesV2_WebGL_20261013_125513_147.loader.js";
                     script.onload = resolve;
                     script.onerror = () => reject(new Error('Chargeur Unity indisponible'));
                     document.body.appendChild(script);
@@ -192,13 +195,13 @@
 			const debutChargement = performance.now();
 			createUnityInstance(canvas, {
 			arguments: [],
-			dataUrl: "Build/WebGL_test_Loading.data.unityweb",
-			frameworkUrl: "Build/WebGL_test_Loading.framework.js.unityweb",
-			codeUrl: "Build/WebGL_test_Loading.wasm.unityweb",
+			dataUrl: "Build/RoyalBuddiesV2_WebGL_20261013_125513_147.data.unityweb",
+			frameworkUrl: "Build/RoyalBuddiesV2_WebGL_20261013_125513_147.framework.js.unityweb",
+			codeUrl: "Build/RoyalBuddiesV2_WebGL_20261013_125513_147.wasm.unityweb",
 			streamingAssetsUrl: "StreamingAssets",
 			companyName: "Royal Buddies",
 			productName: "Royal Buddies",
-			productVersion: "0.1.0"
+			productVersion: "2.0.0"
 			}, function(progress) {
 			const percent = Math.round(progress * 100);
 			bar.style.width = percent + "%";

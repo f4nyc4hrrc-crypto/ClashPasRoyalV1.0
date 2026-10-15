@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-        <meta name="rb-shell-version" content="2026-10-13-v2-local-1">
+        <meta name="rb-shell-version" content="2026-10-15-v2-audio-1">
         <script>
         // Version de la page et du visuel : changer ensemble à chaque publication.
         window.rbShellReady = (async function () {
@@ -93,7 +93,7 @@
         })();
         </script>
 
-			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+			<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 				<title>Royal Buddies</title>
 				<style>
 					* { box-sizing: border-box; }
@@ -115,7 +115,7 @@
 					position: fixed;
 					inset: 0;
 					z-index: 10;
-					background: #102a3c url("TemplateData/RB_loading_screen.png?rb_v=2026-10-13-v2-local-1")
+					background: #102a3c url("TemplateData/RB_loading_screen.png?rb_v=2026-10-15-v2-audio-1")
 					center center / cover no-repeat;
 					display: flex;
 					align-items: flex-end;
@@ -168,7 +168,7 @@
             try {
                 await new Promise(function (resolve, reject) {
                     const script = document.createElement('script');
-                    script.src = "Build/RoyalBuddies_V2_CodeCadeau.loader.js";
+                    script.src = "Build/RoyalBuddiesV2_WebGL_20261015_104213_227.loader.js";
                     script.onload = resolve;
                     script.onerror = () => reject(new Error('Chargeur Unity indisponible'));
                     document.body.appendChild(script);
@@ -195,9 +195,9 @@
 			const debutChargement = performance.now();
 			createUnityInstance(canvas, {
 			arguments: [],
-			dataUrl: "Build/RoyalBuddies_V2_CodeCadeau.data.unityweb",
-			frameworkUrl: "Build/RoyalBuddies_V2_CodeCadeau.framework.js.unityweb",
-			codeUrl: "Build/RoyalBuddies_V2_CodeCadeau.wasm.unityweb",
+			dataUrl: "Build/RoyalBuddiesV2_WebGL_20261015_104213_227.data.unityweb",
+			frameworkUrl: "Build/RoyalBuddiesV2_WebGL_20261015_104213_227.framework.js.unityweb",
+			codeUrl: "Build/RoyalBuddiesV2_WebGL_20261015_104213_227.wasm.unityweb",
 			streamingAssetsUrl: "StreamingAssets",
 			companyName: "Royal Buddies",
 			productName: "Royal Buddies",
